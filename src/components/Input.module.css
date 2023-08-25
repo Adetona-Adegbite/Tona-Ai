@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Multani&display=swap");
+
+.input {
+  width: 100%;
+  font-family: "Noto Sans Multani", sans-serif;
+
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -1%;
+}
+.input div {
+  width: 60%;
+  margin: auto;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  height: 80%;
+  align-items: center;
+}
+.input textarea {
+  font-size: 1rem;
+  padding-left: 20px;
+  padding-top: 20px;
+  resize: none;
+  width: 75%;
+  border: none;
+  transition: min-height 0.3s ease;
+  background-color: #f4f4f9;
+  min-height: auto;
+  margin: 0 10px 0 0;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  display: flex;
+  line-height: normal;
+  align-items: center;
+}
+.input textarea::placeholder {
+  color: darkgray;
+  position: relative;
+
+  left: 2%;
+}
+
+.input textarea:focus {
+  border: 1px solid #3f87f9;
+  outline: none;
+  min-height: auto;
+}
+.input button {
+  width: 60px;
+  height: 70%;
+  border-radius: 10px;
+  outline: none;
+  background: #3f87f9;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.input button:hover {
+  background: #255ab0;
+}
+.input button:disabled {
+  background: gray;
+  color: white;
+}

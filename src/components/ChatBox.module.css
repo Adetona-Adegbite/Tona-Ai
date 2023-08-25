@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Multani&display=swap");
+.chats {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Noto Sans Multani", sans-serif;
+}
+.box {
+  height: 80vh;
+  width: 100%;
+  background: white;
+  position: relative;
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+}
+.chatBox {
+  max-width: 300px;
+  min-height: fit-content;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  padding: 15px 7px 15px 10px;
+  justify-content: center;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin-bottom: 10px;
+}
+.chatBox p {
+  margin: 0;
+}
+.evenMessage {
+  background: #007aff;
+  align-self: flex-end;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.oddMessage {
+  background-color: rgb(178, 176, 176);
+  align-self: flex-start;
+  margin-left: 10px;
+}
+.info {
+  margin: auto;
+  font-size: 1.3rem;
+  opacity: 0.3;
+}
+@media (max-width: 768px) {
+  .info {
+    font-size: 1rem;
+  }
+}
