@@ -26,7 +26,7 @@ export default function ChatBox() {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization: "Bearer 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" ,
+            Authorization: "Bearer "+ apiKey ,
           },
           body: JSON.stringify({
             messages: [{ role: "user", content: message }],
