@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import classes from "./ChatBox.module.css";
 import Input from "./Input";
-
+const apiKey = process.env.REACT_APP_API_KEY;
 export default function ChatBox() {
   const [messages, setMessages] = useState([]);
   const [info, setInfo] = useState(
@@ -26,8 +26,7 @@ export default function ChatBox() {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization:
-              "Bearer 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",
+            Authorization: "Bearer " + apiKey,
           },
           body: JSON.stringify({
             messages: [{ role: "user", content: message }],
