@@ -21,29 +21,25 @@ export default function ChatBox() {
 
     try {
       const response = await fetch(
-        "https://api.openai.com/v1/chat/completions",
+        "https://ai-backend-h6ip.onrender.com/api/openai",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization: "Bearer " + apiKey,
           },
           body: JSON.stringify({
-            messages: [{ role: "user", content: message }],
-            max_tokens: 50,
-            temperature: 0.7,
-            model: "gpt-3.5-turbo",
+            message: message,
           }),
         }
       );
-
       const data = await response.json();
-      const botMessage = await data.choices[0].message.content;
+      // console.log(data.botMessage);
+      const botMessage = await data.botMessage;
       // console.log(data.choices[0].message.content);
       setMessages((oldMessages) => [...oldMessages, botMessage]);
       setDisabled(false);
     } catch (error) {
-      console.error("Error sending message:", error);
+      console.log("Error sending message:", error);
       setDisabled(false);
     }
   }
