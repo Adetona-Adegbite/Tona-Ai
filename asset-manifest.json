@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Tona-Ai/static/css/main.86e65eca.css",
-    "main.js": "/Tona-Ai/static/js/main.c61f6b7f.js",
+    "main.js": "/Tona-Ai/static/js/main.910cc71f.js",
     "index.html": "/Tona-Ai/index.html",
     "main.86e65eca.css.map": "/Tona-Ai/static/css/main.86e65eca.css.map",
-    "main.c61f6b7f.js.map": "/Tona-Ai/static/js/main.c61f6b7f.js.map"
+    "main.910cc71f.js.map": "/Tona-Ai/static/js/main.910cc71f.js.map"
   },
   "entrypoints": [
     "static/css/main.86e65eca.css",
-    "static/js/main.c61f6b7f.js"
+    "static/js/main.910cc71f.js"
   ]
 }
